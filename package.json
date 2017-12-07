@@ -12,6 +12,6 @@
   "author": "RED Interactive Agency",
   "license": "ISC",
   "dependencies": {
-    "ad-utils": "file:../ad-utils"
+    "ad-utils": "git://github.com:ff0000-ad-tech/ad-utils.git"
   }
 }

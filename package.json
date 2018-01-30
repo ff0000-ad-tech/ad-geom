@@ -13,5 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "ad-utils": "git://github.com:ff0000-ad-tech/ad-utils.git"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.5.0",
+    "prettier": "^1.10.2"
   }
 }

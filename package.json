@@ -1,23 +1,23 @@
 {
-  "name": "ad-geom",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git"
-  },
-  "author": "RED Interactive Agency",
-  "license": "ISC",
-  "dependencies": {
-    "ad-utils": "git://github.com:ff0000-ad-tech/ad-utils.git"
-  },
-  "devDependencies": {
-    "eslint": "^4.16.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.5.0",
-    "prettier": "^1.10.2"
-  }
+	"name": "ad-geom",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git"
+	},
+	"author": "RED Interactive Agency",
+	"license": "ISC",
+	"dependencies": {
+		"ad-utils": "git+https://github.com:ff0000-ad-tech/ad-utils.git"
+	},
+	"devDependencies": {
+		"eslint": "^4.16.0",
+		"eslint-config-prettier": "^2.9.0",
+		"eslint-plugin-prettier": "^2.5.0",
+		"prettier": "^1.10.2"
+	}
 }

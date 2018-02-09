@@ -15,7 +15,7 @@
 	"author": "RED Interactive Agency",
 	"license": "MIT",
 	"dependencies": {
-		"ad-utils": "git+https://github.com/ff0000-ad-tech/ad-utils.git"
+		"@ff0000-ad-tech/ad-utils": "latest"
 	},
 	"devDependencies": {
 		"eslint": "^4.16.0",

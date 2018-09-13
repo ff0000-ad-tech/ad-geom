@@ -16,7 +16,7 @@
 	"author": "RED Interactive Agency",
 	"license": "MIT",
 	"dependencies": {
-		"@ff0000-ad-tech/ad-utils": "latest"
+		"@ff0000-ad-tech/ad-utils": "^2.0.0"
 	},
 	"devDependencies": {
 		"babel-eslint": "^8.2.2",

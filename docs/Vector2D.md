@@ -39,8 +39,8 @@ import { Vector2D } from 'ad-geom'
 
 **Example**  
 ```js
-var myVector1 = new Vector2D( 0, 320 );
-		var myVector2 = new Vector2D( -3, 5.5 );
+var myVector1 = new Vector2D(0, 320)
+		var myVector2 = new Vector2D(-3, 5.5)
 ```
 <a name="Vector2D.add"></a>
 
@@ -55,7 +55,7 @@ Adds another vector to itself
 
 **Example**  
 ```js
-myVector1.add( myVector2 );
+myVector1.add(myVector2)
 ```
 <a name="Vector2D.sub"></a>
 
@@ -70,7 +70,7 @@ Subtracts another vector from itself
 
 **Example**  
 ```js
-myVector1.sub( myVector2 );
+myVector1.sub(myVector2)
 ```
 <a name="Vector2D.dist"></a>
 
@@ -84,7 +84,7 @@ myVector1.sub( myVector2 );
 
 **Example**  
 ```js
-var distance = myVector.dist( myVector2 );
+var distance = myVector.dist(myVector2)
 ```
 <a name="Vector2D.mult"></a>
 
@@ -99,7 +99,7 @@ Multiplies X and Y of the vector by s
 
 **Example**  
 ```js
-myVector.mult( 10.3 );
+myVector.mult(10.3)
 ```
 <a name="Vector2D.div"></a>
 
@@ -114,7 +114,7 @@ Divides X and Y of the vector by s
 
 **Example**  
 ```js
-myVector.div( 2 );
+myVector.div(2)
 ```
 <a name="Vector2D.limit"></a>
 
@@ -129,7 +129,7 @@ Limits the length of the vector if it's longer than s
 
 **Example**  
 ```js
-myVector.limit( 18.2 );
+myVector.limit(18.2)
 ```
 <a name="Vector2D.length"></a>
 
@@ -138,7 +138,7 @@ myVector.limit( 18.2 );
 **Returns**: <code>Number</code> - The length of the vector.  
 **Example**  
 ```js
-var length = myVector.length();
+var length = myVector.length()
 ```
 <a name="Vector2D.normalize"></a>
 
@@ -148,7 +148,7 @@ Normalizes the vector( ie scale the vector to length of 1 )
 **Kind**: static method of [<code>Vector2D</code>](#Vector2D)  
 **Example**  
 ```js
-myVector.normalize();
+myVector.normalize()
 ```
 <a name="Vector2D.clone"></a>
 
@@ -158,7 +158,7 @@ Creates a new Vector2D with and same x and y
 **Kind**: static method of [<code>Vector2D</code>](#Vector2D)  
 **Example**  
 ```js
-var newVecotor = myVector.clone();
+var newVecotor = myVector.clone()
 ```
 <a name="Vector2D.degreeToVector"></a>
 
@@ -168,7 +168,7 @@ Converts a degree 0 - 360 to a normalized vector
 **Kind**: static method of [<code>Vector2D</code>](#Vector2D)  
 **Example**  
 ```js
-var myVecotor = Vector2D.degreeToVector( 45 );
+var myVecotor = Vector2D.degreeToVector(45)
 ```
 <a name="Vector2D.random"></a>
 
@@ -183,6 +183,6 @@ Returns a random normalized vector
 
 **Example**  
 ```js
-var myVecotor1 = Vector2D.random();
-			var myVecotor2 = Vector2D.random( 1 );
+var myVecotor1 = Vector2D.random()
+			var myVecotor2 = Vector2D.random(1)
 ```

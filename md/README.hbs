@@ -21,10 +21,13 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 * * *
 
 {{#classes}}
+
 {{>header}}
-{{>description}}
-{{>member-index}}
-{{>separator}}
+
+{{#groupBy (option "group-by")~}}
+{{>member-index-grouped}}
+{{/groupBy~}}
+
 {{/classes}}
 
 * * *

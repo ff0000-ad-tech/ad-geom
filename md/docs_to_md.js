@@ -36,8 +36,28 @@ for (const className of classNames) {
 fs.readFile(__dirname + '/README.hbs', (err, data) => {
 	if (err) return console.error(err)
 	const templateDataMain = jsdoc2md.getTemplateDataSync({ files: inputFile, configure: config })
-	const output = jsdoc2md.renderSync({ data: templateDataMain, template: data.toString() })
-	fs.writeFileSync(path.resolve(outputDir, `README.md`), output)
+	console.log(templateDataMain)
+	const output = jsdoc2md.renderSync({
+		data: templateDataMain,
+		template: data.toString()
+	})
+
+	const classes = templateDataMain
+		.filter(item => item.kind === 'class')
+		.map(item => item.name)
+		.join('|')
+	// console.log(classes)
+
+	const convertLinkToHeader = output.replace(/(<a\sname=")(.*)(">)(<\/a>)/gm, (full, a, b, c, d) => {
+		console.log('=>', full, '|', a, '|', b, '|', c, '|', d)
+		return '## ' + a + b + '" href="./docs/' + b + '.md' + c + b + d
+	})
+
+	const removeVisibleHeader = convertLinkToHeader.replace(new RegExp('## (' + classes + ')', 'g'), '')
+
+	const delink = removeVisibleHeader.replace(/(\[)([^\]]+)(\]\(#[^\)]+\))/g, (full, a, b, c) => b)
+
+	fs.writeFileSync(path.resolve(outputDir, `README.md`), delink)
 })
 
 // store former script

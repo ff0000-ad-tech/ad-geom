@@ -6,7 +6,7 @@
 
 * [SimpleNoise2D](#SimpleNoise2D)
     * [new SimpleNoise2D()](#new_SimpleNoise2D_new)
-    * [.get(x, y)](#SimpleNoise2D.get) ⇒
+    * [.get(x, y)](#SimpleNoise2D.get) ⇒ [<code>Vector2D</code>](#Vector2D)
 
 <a name="new_SimpleNoise2D_new"></a>
 
@@ -24,9 +24,9 @@ import { SimpleNoise2D } from 'ad-geom'
 
 <a name="SimpleNoise2D.get"></a>
 
-### SimpleNoise2D.get(x, y) ⇒
+### SimpleNoise2D.get(x, y) ⇒ [<code>Vector2D</code>](#Vector2D)
 **Kind**: static method of [<code>SimpleNoise2D</code>](#SimpleNoise2D)  
-**Returns**: 2D Noise value in [Vector2D](#Vector2D)  
+**Returns**: [<code>Vector2D</code>](#Vector2D) - 2D Noise value in [Vector2D](#Vector2D)  
 
 | Param | Type | Description |
 | --- | --- | --- |

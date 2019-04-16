@@ -18,59 +18,70 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 
 # Geom
 
----
+* * *
+
 
 ## <a name="Matrix2D" href="./docs/Matrix2D.md">Matrix2D</a>
 
+
+
 * new Matrix2D()
-* .clear()
-* .rotate(radians) ⇒ <code>Matrix2D</code>
-* .rotate(x, y) ⇒ <code>Matrix2D</code>
-* .skew(ax, ay) ⇒ <code>Matrix2D</code>
-* .translate(x, y) ⇒ <code>Matrix2D</code>
-* .getCss() ⇒ <code>String</code>
-* .getX() ⇒ <code>Number</code>
-* .getY() ⇒ <code>Number</code>
-* .setFromCss(matrixString)
+* <a href="./docs/Matrix2D.md#Matrix2D.clear">.clear()</a>
+* <a href="./docs/Matrix2D.md#Matrix2D.rotate">.rotate(radians)</a> ⇒ <code>Matrix2D</code>
+* <a href="./docs/Matrix2D.md#Matrix2D.rotate">.rotate(x, y)</a> ⇒ <code>Matrix2D</code>
+* <a href="./docs/Matrix2D.md#Matrix2D.skew">.skew(ax, ay)</a> ⇒ <code>Matrix2D</code>
+* <a href="./docs/Matrix2D.md#Matrix2D.translate">.translate(x, y)</a> ⇒ <code>Matrix2D</code>
+* <a href="./docs/Matrix2D.md#Matrix2D.getCss">.getCss()</a> ⇒ <code>String</code>
+* <a href="./docs/Matrix2D.md#Matrix2D.getX">.getX()</a> ⇒ <code>Number</code>
+* <a href="./docs/Matrix2D.md#Matrix2D.getY">.getY()</a> ⇒ <code>Number</code>
+* <a href="./docs/Matrix2D.md#Matrix2D.setFromCss">.setFromCss(matrixString)</a>
 
 ## <a name="Matrix3D" href="./docs/Matrix3D.md">Matrix3D</a>
 
+
+
 * new Matrix3D()
-* .clear()
-* .rotateX(radians) ⇒ <code>Matrix3D</code>
-* .rotateY(radians) ⇒ <code>Matrix3D</code>
-* .rotateY(radians) ⇒ <code>Matrix3D</code>
-* .rotate(x, y) ⇒ <code>Matrix3D</code>
-* .skew(ax, ay) ⇒ <code>Matrix3D</code>
-* .translate(x, y, z) ⇒ <code>Matrix3D</code>
-* .getCss() ⇒ <code>String</code>
-* .getX() ⇒ <code>Number</code>
-* .getY() ⇒ <code>Number</code>
-* .getY() ⇒ <code>Number</code>
-* .setFromCss(matrixString)
+* <a href="./docs/Matrix3D.md#Matrix3D.clear">.clear()</a>
+* <a href="./docs/Matrix3D.md#Matrix3D.rotateX">.rotateX(radians)</a> ⇒ <code>Matrix3D</code>
+* <a href="./docs/Matrix3D.md#Matrix3D.rotateY">.rotateY(radians)</a> ⇒ <code>Matrix3D</code>
+* <a href="./docs/Matrix3D.md#Matrix3D.rotateY">.rotateY(radians)</a> ⇒ <code>Matrix3D</code>
+* <a href="./docs/Matrix3D.md#Matrix3D.rotate">.rotate(x, y)</a> ⇒ <code>Matrix3D</code>
+* <a href="./docs/Matrix3D.md#Matrix3D.skew">.skew(ax, ay)</a> ⇒ <code>Matrix3D</code>
+* <a href="./docs/Matrix3D.md#Matrix3D.translate">.translate(x, y, z)</a> ⇒ <code>Matrix3D</code>
+* <a href="./docs/Matrix3D.md#Matrix3D.getCss">.getCss()</a> ⇒ <code>String</code>
+* <a href="./docs/Matrix3D.md#Matrix3D.getX">.getX()</a> ⇒ <code>Number</code>
+* <a href="./docs/Matrix3D.md#Matrix3D.getY">.getY()</a> ⇒ <code>Number</code>
+* <a href="./docs/Matrix3D.md#Matrix3D.getY">.getY()</a> ⇒ <code>Number</code>
+* <a href="./docs/Matrix3D.md#Matrix3D.setFromCss">.setFromCss(matrixString)</a>
 
 ## <a name="ParentTransform" href="./docs/ParentTransform.md">ParentTransform</a>
+
+
 
 * new ParentTransform()
 
 ## <a name="SimpleNoise2D" href="./docs/SimpleNoise2D.md">SimpleNoise2D</a>
 
+
+
 * new SimpleNoise2D()
-* .get(x, y) ⇒ <code>Vector2D</code>
+* <a href="./docs/SimpleNoise2D.md#SimpleNoise2D.get">.get(x, y)</a> ⇒ <code>Vector2D</code>
 
 ## <a name="Vector2D" href="./docs/Vector2D.md">Vector2D</a>
 
-* new Vector2D(x, y)
-* .add(v) ⇒ <code>Vector2D</code>
-* .sub(v) ⇒ <code>Vector2D</code>
-* .dist(v) ⇒ <code>number</code>
-* .mult(s)
-* .div(s) ⇒ <code>Vector2D</code>
-* .limit(s) ⇒ <code>Vector2D</code>
-* .length() ⇒ <code>Number</code>
-* .normalize() ⇒ <code>Vector2D</code>
-* .clone() ⇒ <code>Vector2D</code>
-* .degreeToVector() ⇒ <code>Vector2D</code>
-* .random(degreeIncrement) ⇒ <code>Vector2D</code>
 
----
+
+* new Vector2D(x, y)
+* <a href="./docs/Vector2D.md#Vector2D.add">.add(v)</a> ⇒ <code>Vector2D</code>
+* <a href="./docs/Vector2D.md#Vector2D.sub">.sub(v)</a> ⇒ <code>Vector2D</code>
+* <a href="./docs/Vector2D.md#Vector2D.dist">.dist(v)</a> ⇒ <code>number</code>
+* <a href="./docs/Vector2D.md#Vector2D.mult">.mult(s)</a>
+* <a href="./docs/Vector2D.md#Vector2D.div">.div(s)</a> ⇒ <code>Vector2D</code>
+* <a href="./docs/Vector2D.md#Vector2D.limit">.limit(s)</a> ⇒ <code>Vector2D</code>
+* <a href="./docs/Vector2D.md#Vector2D.length">.length()</a> ⇒ <code>Number</code>
+* <a href="./docs/Vector2D.md#Vector2D.normalize">.normalize()</a> ⇒ <code>Vector2D</code>
+* <a href="./docs/Vector2D.md#Vector2D.clone">.clone()</a> ⇒ <code>Vector2D</code>
+* <a href="./docs/Vector2D.md#Vector2D.degreeToVector">.degreeToVector()</a> ⇒ <code>Vector2D</code>
+* <a href="./docs/Vector2D.md#Vector2D.random">.random(degreeIncrement)</a> ⇒ <code>Vector2D</code>
+
+* * *

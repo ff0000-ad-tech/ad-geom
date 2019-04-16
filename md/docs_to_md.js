@@ -55,9 +55,17 @@ fs.readFile(__dirname + '/README.hbs', (err, data) => {
 
 	const removeVisibleHeader = convertLinkToHeader.replace(new RegExp('## (' + classes + ')', 'g'), '')
 
-	const delink = removeVisibleHeader.replace(/(\[)([^\]]+)(\]\(#[^\)]+\))/g, (full, a, b, c) => b)
+	// use to simply remove the links
+	// const delink = removeVisibleHeader.replace(/(\[)([^\]]+)(\]\(#[^\)]+\))/g, (full, a, b, c) => b)
 
-	fs.writeFileSync(path.resolve(outputDir, `README.md`), delink)
+	// use to convert links from page scroll to nav to other md files
+	const relink = removeVisibleHeader.replace(/(\[)([^\]]+)(\]\(#([^\)]+)\))/g, (full, a, b, c, d) => {
+		//split to see if it is a method or property
+		const split = d.split('.')
+		return split.length > 1 ? `<a href="./docs/${split[0]}.md#${d}">${b}</a>` : b
+	})
+
+	fs.writeFileSync(path.resolve(outputDir, `README.md`), relink) // delink)
 })
 
 // store former script

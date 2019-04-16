@@ -23,8 +23,6 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 
 ## <a name="Matrix2D" href="./docs/Matrix2D.md">Matrix2D</a>
 
-
-
 * new Matrix2D()
 * <a href="./docs/Matrix2D.md#Matrix2D.clear">.clear()</a>
 * <a href="./docs/Matrix2D.md#Matrix2D.rotate">.rotate(radians)</a> ⇒ <code>Matrix2D</code>
@@ -37,8 +35,6 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 * <a href="./docs/Matrix2D.md#Matrix2D.setFromCss">.setFromCss(matrixString)</a>
 
 ## <a name="Matrix3D" href="./docs/Matrix3D.md">Matrix3D</a>
-
-
 
 * new Matrix3D()
 * <a href="./docs/Matrix3D.md#Matrix3D.clear">.clear()</a>
@@ -56,20 +52,14 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 
 ## <a name="ParentTransform" href="./docs/ParentTransform.md">ParentTransform</a>
 
-
-
 * new ParentTransform()
 
 ## <a name="SimpleNoise2D" href="./docs/SimpleNoise2D.md">SimpleNoise2D</a>
-
-
 
 * new SimpleNoise2D()
 * <a href="./docs/SimpleNoise2D.md#SimpleNoise2D.get">.get(x, y)</a> ⇒ <code>Vector2D</code>
 
 ## <a name="Vector2D" href="./docs/Vector2D.md">Vector2D</a>
-
-
 
 * new Vector2D(x, y)
 * <a href="./docs/Vector2D.md#Vector2D.add">.add(v)</a> ⇒ <code>Vector2D</code>

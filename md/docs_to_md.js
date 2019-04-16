@@ -10,21 +10,20 @@ if (!fs.existsSync(outputDocsDir)) {
 	fs.mkdirSync(outputDocsDir)
 }
 
-/* input and output paths */
+// input and output paths
 const inputFile = __dirname + '/../lib/*.js'
 const config = __dirname + '/config.jsdoc.json'
-// const outputDir = __dirname
 
-/* get template data */
+// get template data
 const templateData = jsdoc2md.getTemplateDataSync({ files: inputFile, configure: config })
 
-/* reduce templateData to an array of class names */
+// reduce templateData to an array of class names
 const classNames = templateData.reduce((classNames, identifier) => {
 	if (identifier.kind === 'class') classNames.push(identifier.name)
 	return classNames
 }, [])
 
-/* create a documentation file for each class */
+// create a documentation file for each class
 for (const className of classNames) {
 	const template = `{{#class name="${className}"}}{{>docs}}{{/class}}`
 	// console.log(`rendering ${className}, template: ${template}`)
@@ -32,35 +31,25 @@ for (const className of classNames) {
 	fs.writeFileSync(path.resolve(outputDocsDir, `${className}.md`), output)
 }
 
-/* create the main README */
+// create the main README
 fs.readFile(__dirname + '/README.hbs', (err, data) => {
 	if (err) return console.error(err)
 	const templateDataMain = jsdoc2md.getTemplateDataSync({ files: inputFile, configure: config })
-	console.log(templateDataMain)
 	const output = jsdoc2md.renderSync({
 		data: templateDataMain,
 		template: data.toString()
 	})
 
-	const classes = templateDataMain
-		.filter(item => item.kind === 'class')
-		.map(item => item.name)
-		.join('|')
-	// console.log(classes)
-
-	const convertLinkToHeader = output.replace(/(<a\sname=")(.*)(">)(<\/a>)/gm, (full, a, b, c, d) => {
-		console.log('=>', full, '|', a, '|', b, '|', c, '|', d)
+	const mergeLinkToHeader = output.replace(/(<a\sname=")(.*)(">)(<\/a>)([^#])+(##.+)/gm, (full, a, b, c, d) => {
 		return '## ' + a + b + '" href="./docs/' + b + '.md' + c + b + d
 	})
-
-	const removeVisibleHeader = convertLinkToHeader.replace(new RegExp('## (' + classes + ')', 'g'), '')
 
 	// use to simply remove the links
 	// const delink = removeVisibleHeader.replace(/(\[)([^\]]+)(\]\(#[^\)]+\))/g, (full, a, b, c) => b)
 
 	// use to convert links from page scroll to nav to other md files
-	const relink = removeVisibleHeader.replace(/(\[)([^\]]+)(\]\(#([^\)]+)\))/g, (full, a, b, c, d) => {
-		//split to see if it is a method or property
+	const relink = mergeLinkToHeader.replace(/(\[)([^\]]+)(\]\(#([^\)]+)\))/g, (full, a, b, c, d) => {
+		// split to see if it is a method or property
 		const split = d.split('.')
 		return split.length > 1 ? `<a href="./docs/${split[0]}.md#${d}">${b}</a>` : b
 	})

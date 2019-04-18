@@ -18,8 +18,7 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 
 # Geom
 
-* * *
-
+---
 
 ## <a name="Matrix2D" href="./docs/Matrix2D.md">Matrix2D</a>
 
@@ -74,4 +73,4 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 * <a href="./docs/Vector2D.md#Vector2D.degreeToVector">.degreeToVector()</a> ⇒ <code>Vector2D</code>
 * <a href="./docs/Vector2D.md#Vector2D.random">.random(degreeIncrement)</a> ⇒ <code>Vector2D</code>
 
-* * *
+---

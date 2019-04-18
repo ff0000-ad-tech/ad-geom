@@ -23,16 +23,9 @@
 
 ### new Vector2D(x, y)
 
+A simple 2D Vector class
+<br><br>
 Import from <a href="https://github.com/ff0000-ad-tech/ad-geom">ad-geom</a>
-<br>
-<pre class="sunlight-highlight-javascript">
-// importing into an ES6 class
-import { Vector2D } from 'ad-geom'
-
-</pre>
-		<br><br>
-
-    	A simple 2D Vector classs
 
 | Param | Type                |
 | ----- | ------------------- |
@@ -42,6 +35,7 @@ import { Vector2D } from 'ad-geom'
 **Example**
 
 ```js
+import { Vector2D } from 'ad-geom'
 var myVector1 = new Vector2D(0, 320)
 var myVector2 = new Vector2D(-3, 5.5)
 ```

@@ -19,10 +19,9 @@ For a more sophisticated purpose, please use Perline Noise https://github.com/jo
 <br>
 Import from <a href="https://github.com/ff0000-ad-tech/ad-geom">ad-geom</a>
 <br>
-<pre class="sunlight-highlight-javascript">
-// importing into an ES6 class
-import { SimpleNoise2D } from 'ad-geom'
 
+<pre class="sunlight-highlight-javascript">
+import { SimpleNoise2D } from 'ad-geom'
 </pre>
 
 <a name="SimpleNoise2D.get"></a>

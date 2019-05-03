@@ -53,6 +53,7 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 ## <a name="ParentTransform" href="./docs/ParentTransform.md">ParentTransform</a>
 
 * new ParentTransform()
+* <a href="./docs/ParentTransform.md#ParentTransform.update">.update(callback)</a> ⇒ <code>Array</code>
 
 ## <a name="SimpleNoise2D" href="./docs/SimpleNoise2D.md">SimpleNoise2D</a>
 
